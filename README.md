@@ -2,7 +2,7 @@
 
 ![Cluster Visualization](plots/Clustering_result.jpg)
 
-This repository contains the R code and data processing pipeline for **Paper 3** of my PhD thesis. It investigates the sources of high-concentration Coarse Particulate Matter ($PM_{coarse}$) events at the Manchester Supersite between 2019 and 2023. The analysis utilizes high-resolution XACT metals data and applies **Fuzzy C-Means (FCM)** clustering and **Principal Component Analysis (PCA)** to identify distinct source profiles (e.g., Road Dust, Brake Wear, etc.).
+This repository contains the R code and data processing pipeline for this article. It investigates the sources of high-concentration Coarse Particulate Matter ($PM_{coarse}$) events at the Manchester Supersite between 2019 and 2023. The analysis utilises high-resolution XACT metals data and applies **Fuzzy C-Means (FCM)** clustering and **Principal Component Analysis (PCA)** to identify distinct source profiles (e.g., Road Dust, Brake Wear, etc.).
 
 ## 📂 Repository Structure
 
@@ -32,7 +32,7 @@ The scripts are numbered sequentially to ensure the correct data flow. Please ru
 * **`01_Data_Prep_PM_Seasons.R`**: Loads PM data, splits by season, and identifies "High Concentration Events" (>99th percentile).
 * **`02_Process_XACT_Metals.R`**: Processes XACT metals data, calculates the Coarse fraction ($PM_{10} - PM_{2.5}$), and matches it to the events.
 * **`03_Exploratory_PCA_tSNE.R`**: Performs exploratory analysis (Scree plot, t-SNE) and detects outliers using Local Outlier Factor (LOF).
-* **`04_Fuzzy_Clustering.R`**: Optimizes cluster count using Silhouette scores and runs the **Fuzzy C-Means (FCM)** algorithm.
+* **`04_Fuzzy_Clustering.R`**: Optimises cluster count using Silhouette scores and runs the **Fuzzy C-Means (FCM)** algorithm.
 * **`05_Cluster_Source_Profiles.R`**: Calculates membership-weighted source profiles and generates source contribution bar charts.
 * **`06_Environmental_Analysis.R`**: Integrates meteorological data to produce Wind Roses and histograms for each cluster.
 * **`07_Advanced_Stats_Correlations.R`**: Performs detailed PCA and generates correlation matrices to analyze elemental relationships within clusters.
